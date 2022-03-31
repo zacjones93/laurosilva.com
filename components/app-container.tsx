@@ -7,7 +7,7 @@ export default function Container(props: any) {
   const meta = {
     title: 'Lauro Silva',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard`,
-    image: 'https://laurosilva.com/static/images/hero-image.png',
+    image: 'https://www.laurosilva.com/hero-image.png',
     type: 'website',
     ...customMeta,
   }
