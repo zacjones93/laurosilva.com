@@ -1,4 +1,3 @@
-import AppContainer from 'components/app-container'
 import Image from 'next/image'
 import {format, parseISO} from 'date-fns'
 import type {PropsWithChildren} from 'react'
@@ -9,12 +8,7 @@ export default function BlogLayout({
   post,
 }: PropsWithChildren<{post: Blog}>) {
   return (
-    <AppContainer
-      title={`${post.title} – Lauro Silva`}
-      description={post.summary}
-      date={new Date(post.publishedAt).toISOString()}
-      type="article"
-    >
+    <div>
       <article>
         <h1>{post.title}</h1>
         <div>
@@ -46,7 +40,7 @@ export default function BlogLayout({
           </a>
         </footer>
       </article>
-    </AppContainer>
+    </div>
   )
 }
 

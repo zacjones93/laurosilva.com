@@ -1,4 +1,3 @@
-import AppContainer from 'components/app-container'
 import Image from 'next/image'
 import type {PropsWithChildren} from 'react'
 import type {Portfolio} from 'contentlayer/generated'
@@ -8,10 +7,7 @@ export default function PorfolioLayout({
   project,
 }: PropsWithChildren<{project: Portfolio}>) {
   return (
-    <AppContainer
-      title={`${project.name} – Lauro Silva`}
-      description={project.summary}
-    >
+    <div>
       <article>
         <h1>{project.name}</h1>
         <div>
@@ -26,6 +22,6 @@ export default function PorfolioLayout({
         </div>
         <section>{children}</section>
       </article>
-    </AppContainer>
+    </div>
   )
 }

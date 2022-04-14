@@ -1,4 +1,3 @@
-import AppContainer from 'components/app-container'
 import BlogCard from 'components/blog-card'
 import {allBlogs} from 'contentlayer/generated'
 import {InferGetStaticPropsType} from 'next'
@@ -19,10 +18,7 @@ export default function Blog({
     )
 
   return (
-    <AppContainer
-      title="Blog – Lauro Silva"
-      description={`I've written ${posts.length} posts on this site.`}
-    >
+    <div>
       <div>
         <h1>Blog</h1>
         <p>{`I've written ${posts.length} posts on this site.`}</p>
@@ -43,7 +39,7 @@ export default function Blog({
           <BlogCard key={post.title} {...post} />
         ))}
       </div>
-    </AppContainer>
+    </div>
   )
 }
 
