@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Navigation() {
   return (
@@ -8,7 +9,7 @@ export default function Navigation() {
           <Link href="/">
             <a>
               <span className="sr-only">Lauro Silva</span>
-              <img className="w-10 h-10" src="/logo.svg" alt="" />
+              <Image height="40px" width="40px" src="/logo.svg" alt="" />
             </a>
           </Link>
         </div>

@@ -26,7 +26,7 @@ export default function Blog({
         <p className="my-8 text-gray-300">
           {`I've written ${posts.length} posts on this site.`} Lorem Ipsum is
           simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's.
+          Ipsum has been the industry.
         </p>
         <div>
           <input

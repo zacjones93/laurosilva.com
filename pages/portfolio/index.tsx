@@ -16,9 +16,9 @@ export default function Blog({
         </h1>
         <p className="my-8 text-gray-300">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply
+          industry. Lorem Ipsum has been the industry Lorem Ipsum is simply
           dummy text of the printing and typesetting industry. Lorem Ipsum has
-          been the industry's.
+          been the industry.
         </p>
         {sorted.map(project => {
           return (
