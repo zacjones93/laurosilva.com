@@ -8,7 +8,7 @@ export default function Navigation() {
           <Link href="/">
             <a>
               <span className="sr-only">Lauro Silva</span>
-              <img className="w-auto h-10" src="/logo.svg" alt="" />
+              <img className="w-10 h-10" src="/logo.svg" alt="" />
             </a>
           </Link>
         </div>

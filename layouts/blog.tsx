@@ -10,7 +10,7 @@ export default function BlogLayout({
   return (
     <div className="w-full max-w-screen-md m-auto">
       <article>
-        <h1 className="text-4xl font-extrabold tracking-tight leading-[1.1] sm:text-4xl lg:text-5xl xl:text-6xl mb-6">
+        <h1 className="text-3xl font-extrabold tracking-tight leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl mb-6">
           {post.title}
         </h1>
         <div className="flex flex-row items-center justify-between w-full mb-6">
@@ -35,33 +35,7 @@ export default function BlogLayout({
         <section className="w-full mt-5 prose prose-invert prose-dark sm:prose-lg prose-base max-w-none prose-a:text-blue-400 ">
           {children}
         </section>
-
-        <footer className="mt-10 text-sm text-gray-300">
-          <a
-            href={discussUrl(post.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Discuss on Twitter'}
-          </a>
-          {` • `}
-          <a
-            href={editUrl(post.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Edit on GitHub'}
-          </a>
-        </footer>
       </article>
     </div>
   )
 }
-
-const editUrl = (slug: string) =>
-  `https://github.com/laurosilvacom/laurosilva.com/edit/main/data/blog/${slug}.mdx`
-
-const discussUrl = (slug: string) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `https://laurosilva.com/blog/${slug}`,
-  )}`

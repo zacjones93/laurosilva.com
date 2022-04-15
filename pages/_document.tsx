@@ -18,17 +18,8 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="es">
-        <Head>
-          {/* preloading fonts */}
-          <link
-            rel="preload"
-            href="/fonts/ibm-plex-sans-var.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
-        </Head>
-        <body className="px-4 text-white transition-colors duration-500 ease-in-out bg-black sm:px-6 lg:px-8">
+        <Head />
+        <body className="px-4 text-white bg-black sm:px-6 lg:px-8">
           <Main />
           <NextScript />
         </body>

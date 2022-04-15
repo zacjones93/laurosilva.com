@@ -19,6 +19,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Remove Safari input shadow on mobile */
+input[type='text'],
+input[type='email'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .prose .prose .anchor {
   @apply absolute invisible no-underline;
 

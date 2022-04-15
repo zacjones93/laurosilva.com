@@ -9,12 +9,15 @@ export default function BlogPost({
 }: Pick<Blog, 'title' | 'summary' | 'slug'>) {
   return (
     <Link href={`/blog/${slug}`}>
-      <a>
-        <div>
-          <h4>{title}</h4>
-        </div>
-        <p>{summary}</p>
-      </a>
+      <div className="my-10">
+        <a>
+          <h3 className="text-2xl font-extrabold tracking-tight leading-[1.1] sm:text-2xl lg:text-3xl xl:text-3xl mb-6">
+            {title}
+          </h3>
+
+          <p className="text-gray-300">{summary}</p>
+        </a>
+      </div>
     </Link>
   )
 }

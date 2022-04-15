@@ -18,22 +18,29 @@ export default function Blog({
     )
 
   return (
-    <div>
+    <div className="w-full max-w-screen-md m-auto">
       <div>
-        <h1>Blog</h1>
-        <p>{`I've written ${posts.length} posts on this site.`}</p>
+        <h1 className="text-3xl font-extrabold tracking-tight leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl">
+          Blog
+        </h1>
+        <p className="my-8 text-gray-300">
+          {`I've written ${posts.length} posts on this site.`} Lorem Ipsum is
+          simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's.
+        </p>
         <div>
           <input
             aria-label="Search posts"
             type="text"
             onChange={e => setSearchValue(e.target.value)}
             placeholder="Search posts"
+            className="block w-full px-4 py-2 text-gray-100 bg-gray-900 border border-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
           />
         </div>
 
-        <h3>All Posts</h3>
-
-        {!filteredBlogPosts.length && <p>No posts found.</p>}
+        <p className="my-8 text-gray-300">
+          {!filteredBlogPosts.length && <p>No posts found.</p>}
+        </p>
 
         {filteredBlogPosts.map(post => (
           <BlogCard key={post.title} {...post} />

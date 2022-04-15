@@ -9,7 +9,7 @@ export default function PorfolioLayout({
   return (
     <div className="w-full max-w-screen-md m-auto">
       <article>
-        <h1 className="text-4xl font-extrabold tracking-tight leading-[1.1] sm:text-4xl lg:text-5xl xl:text-6xl mb-6">
+        <h1 className="text-3xl font-extrabold tracking-tight leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl mb-6">
           {project.name}
         </h1>
         <div className="flex flex-row items-center justify-between w-full mb-6">
