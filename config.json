@@ -1,33 +1,33 @@
 {
-  "title": "Escuela Frontend",
-  "titleTemplate": "%s | escuelafrontend.com",
-  "author": "Escuela Frontend",
+  "title": "Lauro Silva",
+  "titleTemplate": "%s | laurosilva.com",
+  "author": "Lauro Silva",
   "description": "Conviértete en un Frontend Developer Profesional. Accede a contenido de alta calidad para construir una carrera exitosa como Frontend Developer.",
-  "favicon": "/favicon.ico",
-  "email": "equipo@escuelafrontend.com",
-  "siteUrl": "escuelafrontend.com",
+  "favicon": "/logo.svg",
+  "email": "hey@laurosilva.com",
+  "siteUrl": "laurosilva.com",
   "additionalMetaTags": [
-    {"property": "author", "content": "Escuela Frontend"},
+    {"property": "author", "content": "Lauro Silva"},
     {
       "property": "keywords",
-      "content": "Curso de Frontend, Carrera Profesional de Frontend, Escuela Frontend, React, React Hooks, JavaScript, TypeScript, State Management"
+      "content": "Lauro Silva, Lauro, Silva, Software Engineer, Digital Garden, Design, Instructional Design"
     }
   ],
   "twitter": {
     "cardType": "summary_large_image",
-    "handle": "@EscuelaFrontend",
-    "site": "EscuelaFrontend"
+    "handle": "@laurosilvacom",
+    "site": "laurosilva.com"
   },
   "openGraph": {
     "type": "website",
-    "site_name": "Escuela Frontend",
+    "site_name": "Lauro Silva",
     "profile": {
       "firstName": "Lauro",
       "lastName": "Silva"
     },
     "images": [
       {
-        "url": "https://res.cloudinary.com/escuela-frontend/image/upload/v1625385219/assets/main-og-image_buic7g.png",
+        "url": "https://res.cloudinary.com/laurosilvacom/image/upload/v1649998020/laurosilvacom/assets/card_zegf48.png",
         "width": 1280,
         "height": 720
       }

@@ -6,7 +6,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue-opaque': 'rgb(13 42 148 / 18%)',
         gray: {
           0: '#fff',
           100: '#fafafa',
@@ -25,9 +24,9 @@ module.exports = {
       },
       typography: theme => ({
         css: {
-          color: theme('colors.gray.200'),
+          color: theme('colors.gray.300'),
           a: {
-            color: theme('colors.red.400'),
+            color: theme('colors.blue.400'),
             '&:hover': {
               color: theme('colors.blue.600'),
             },

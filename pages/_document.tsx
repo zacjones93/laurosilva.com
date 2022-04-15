@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="transition-colors duration-500 ease-in-out bg-gray-900 text-white">
+        <body className="px-4 text-white transition-colors duration-500 ease-in-out bg-black sm:px-6 lg:px-8">
           <Main />
           <NextScript />
         </body>
